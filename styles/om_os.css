@@ -1,130 +1,132 @@
-/* Mobilvenligt design - standard */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: var(--white);
-  }
-  
-  h1 {
-    margin: 0;
-    padding-left: 20px;
-  }
-  
-  /* Header */
-  .header {
-    background-color: var(--blue); /* Blå farve */
-    color: rgb(255, 223, 184); /* Orange tekst */
-    text-align: left;
-    padding: 10px;
-    font-size: 0.8rem;
-  }
-  
-  /* Main Content */
-  .main-content {
-    display: grid;
-    grid-template-columns: 1fr; /* Enkolonne-layout */
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .text-column {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  
-  .right-text {
-    padding-top: 28px;
-    padding-bottom: 90px;
-  }
-  
-  .left-text {
-    padding-bottom: 35px;
-  }
-  
-  .center-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .overlapping-boxes {
-    position: relative;
-    width: 150px;
-    height: 150px;
-  }
-  
-  .blue-box {
-    background-color: rgba(56, 72, 150, 1); /* Lyseblå farve */
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: -10px; /* Lidt op */
-    left: -50px; /* Lidt til venstre */
-    border-radius: 8px;
-    transform: rotate(-15deg); /* Mere rotation */
-  }
-  
-  .orange-box {
-    background-color: rgba(255, 214, 163, 1); /* Orange farve */
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    top: 30px; /* Længere ned */
-    left: 60px; /* Længere til højre */
-    border-radius: 8px;
-    transform: rotate(15deg); /* Mere rotation */
-  }
-  
-  .image-1, .image-2 {
-    position: absolute;
-    width: 150px; /* Gør billederne lidt mindre */
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .image-1 {
-    top: -1px; /* Placeres over den blå boks */
-    left: -50px;
-    z-index: 1; /* Sørger for, at billedet vises øverst */
-  }
-  
-  .image-2 {
-    top: 29px; /* Placeres over den orange boks */
-    left: 65px;
-    z-index: 2;
-  }
-  
-  .owner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 1rem;
-    color: rgba(62, 45, 22, 1);
-    text-align: center;
-    z-index: 3;
-  }
-  
-  /* Forhindrer billedet i at lapper ud over skærmen */
-  .bottom-image img {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 120%; /* Billedet fylder hele bredden */
-    height: auto; /* Beholder proportionerne */
-    z-index: -1;
-    max-height: 150px; /* Maksimal højde på billedet */
-  }
-  
-  
-  
-  
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--blue);
+  text-align: center;
+}
+
+.afsnit-image {
+  width: 160px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* text-section - teksten om os, både øverst og nederst */
+.text-section1, .text-section2 p {
+  font-size: 1.1rem;
+  color: var(--blue);
+  line-height: 1.9;
+  margin: 20px;
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* bokse i baggrunden */
+.background {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 40px;
+}
+
+.blue {
+  background-color: var(--blue);
+  top: 10px;
+  left: 32px;
+  rotate: -15deg;
+  z-index: 1;
+}
+
+.orange {
+  background-color: var(--orange);
+  top: 10px;
+  left: -75px;
+  rotate: 15deg;
+  z-index: 1;
+}
+
+/* billeder af Moshe */
+.image-wrapper img {
+  width: 100px;
+  height: auto;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+
+
+.image-wrapper p {
+  color: var(--red);
+  padding: 5px 1px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: -80px;
+  padding-left: 124px;
+  z-index: 3;
+  font-family: "Permanent Marker", cursive;
+}
+
+/* rødt banner med pil og tekst, overgang til scrollbar */
+.rødt_banner {
+  background-color: var(--red);
+  color: var(--white);
+  padding-inline: 105px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.rødt_banner p {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pil {
+  width: 50px;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* scrollbar afdeling: */
+.scrollbar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.scrollbar img {
+  width: 220px;
+  height: auto;
+  border: 2px solid #ffffff;
+}
+
   
   
   
