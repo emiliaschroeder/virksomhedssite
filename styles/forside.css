@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* baggrundsfarve */
+body {
+  background-color: var(--white);
+}
+
+.box_orange {
+  background-color: var(--orange);
+  padding-bottom: 3rem;
+}
+
+.box_blue {
+  background-color: var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Billeder css */
+.forside_img {
+  width: 100%;
+}
+
+/* Lottie css */
+/* Hvorfor overlapper teksten under? */
+.container {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden; /* Prevents text from spilling into the animation container */
+}
+
+.forside_img {
+  grid-area: 1 / 1; /* Place image in the same grid cell */
+  width: 100%;
+  height: auto;
+}
+
+.lottie {
+  grid-area: 1 / 1; /* Place animation in the same grid cell */
+  width: 100%; /* Adjust size as needed */
+  z-index: 1; /* Ensure it appears above the image */
+}
+
+/* Tekst */
+h1,
+p,
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding-top: 2rem;
+  color: var(--blue);
+}
+
+h2 {
+  color: var(--blue);
+}
+
+.white_tekst {
+  color: var(--white);
+}
+.red_tekst {
+  color: var(--red);
+}
+
+@media (min-width: 800px) {
+  /* grid */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

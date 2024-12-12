@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/mutual_styles.css" />
     <link rel="stylesheet" href="styles/forside.css" />
     <link rel="stylesheet" href="styles/burgermenu.css" />
+    <link rel="stylesheet" href="javascript/menu.js" />
   </head>
   <body>
     <header>
@@ -34,70 +35,80 @@
         </div>
       </nav>
     </header>
-    <!-- indsæt billede -->
-    <!-- Hero embed kode -->
+    <div class="wrapper">
+      <section class="container">
+        <img class="forside_img" src="billeder/forside.png" alt="front" />
+        <div class="lottie">
+          <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+          <dotlottie-player src="https://lottie.host/7e0df6b5-4350-432f-b8ce-48b7007fe123/1pVKKHYoDZ.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+        </div>
+      </section>
+    </div>
+    <main>
+      <!-- indsæt billede -->
+      <!-- Hero embed kode -->
 
-    <!-- Om os -->
-    <h1>Om os</h1>
+      <!-- Om os -->
+      <h1>Om os</h1>
 
-    <section class="grid_1-1">
-      <div>
-        <p>Cafeen er et særligt sted, hvor mennesker mødes for at nyde god mad, inspirerende omgivelser og en afslappet atmosfære. Hos os er der plads til både ro, kreativitet og nærvær – uanset om du kommer for en kop kaffe, et måltid eller bare et øjebliks pause fra hverdagen.</p>
-        <h2>LÆS MERE</h2>
-      </div>
-      <div>
-        <img src="billeder/om_os_forside.png" alt="cafevindue" />
-      </div>
-    </section>
-
-    <!-- Menuen -->
-    <section class="box_orange">
-      <div class="grid_1-1">
+      <section class="grid_1-1">
         <div>
-          <h1>Menu</h1>
-          <p>Vi byder på en menu, der kombinerer det bedste fra fransk og dansk køkken. Fra klassiske smørrebrød og lækre sandwich til varme gryderetter – her er noget for enhver smag. Perfekt til en hyggelig frokost eller et afslappet måltid i gode omgivelser.</p>
-          <h2>SE MENUEN HER</h2>
+          <p>Cafeen er et særligt sted, hvor mennesker mødes for at nyde god mad, inspirerende omgivelser og en afslappet atmosfære. Hos os er der plads til både ro, kreativitet og nærvær – uanset om du kommer for en kop kaffe, et måltid eller bare et øjebliks pause fra hverdagen.</p>
+          <a href="om_os.html"><h2>Læs mere</h2></a>
         </div>
         <div>
-          <img src="billeder/menu_forside.png" alt="baren" />
+          <img src="billeder/om_os_forside.png" alt="cafevindue" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Galleri -->
-    <section class="box_blue">
-      <div>
-        <h1>GALLERI</h1>
-        <img src="billeder/galleri_forside.png" alt="collage" />
-        <h2>FLERE MALERIER</h2>
-      </div>
-    </section>
+      <!-- Menuen -->
+      <section class="box_orange">
+        <div class="grid_1-1">
+          <div>
+            <h1 class="red_tekst">Menu</h1>
+            <p>Vi byder på en menu, der kombinerer det bedste fra fransk og dansk køkken. Fra klassiske smørrebrød og lækre sandwich til varme gryderetter – her er noget for enhver smag. Perfekt til en hyggelig frokost eller et afslappet måltid i gode omgivelser.</p>
+            <a href="menukort.html"><h2 class="red_tekst">Se menuen her</h2></a>
+          </div>
+          <div>
+            <img src="billeder/menu_forside.png" alt="baren" />
+          </div>
+        </div>
+      </section>
 
-    <!-- Events -->
-    <h1>Events</h1>
+      <!-- Galleri -->
+      <section class="box_blue">
+        <div>
+          <h1 class="white_tekst">Galleri</h1>
+          <img src="billeder/galleri_forside.png" alt="collage" />
+          <a href="galleri.html"><h2 class="white_tekst">Flere malerier</h2></a>
+        </div>
+      </section>
 
-    <section class="grid_1-1">
-      <div>
-        <p>Blå time er mere end bare en café – det er et kulturelt samlingssted. Vi afholder kunstudstillinger, live jazz, forfatteraftener og intime optrædener.</p>
-        <p>Følg os på Facebook og Instagram for at holde dig opdateret om kommende events og oplevelser.</p>
-        <h2>Facebook</h2>
-        <h2>Instagram</h2>
-      </div>
-      <div>
-        <img src="billeder/events_forside.png" alt="musikere" />
-      </div>
-    </section>
+      <!-- Events -->
+      <h1>Events</h1>
 
+      <section class="grid_1-1">
+        <div>
+          <p>Blå time er mere end bare en café – det er et kulturelt samlingssted. Vi afholder kunstudstillinger, live jazz, forfatteraftener og intime optrædener.</p>
+          <p>Følg os på Facebook og Instagram for at holde dig opdateret om kommende events og oplevelser.</p>
+          <h2>Facebook</h2>
+          <h2>Instagram</h2>
+        </div>
+        <div>
+          <img src="billeder/events_forside.png" alt="musikere" />
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
-    <footer>
-      <section class="footer">
+    <footer class="box_blue">
+      <section class="grid_1-1">
         <div>
-          <img src="billeder/logo_hvid.png" alt="hvid logo" />
+          <img src="billeder/logo_hvid.svg" alt="hvid logo" />
         </div>
         <div>
-          <h2>Find os her</h2>
-          <p>Store Kongensgade 36</p>
-          <p>1264 København</p>
+          <a href="kontakt.html"><h2 class="white_tekst">Find os her</h2></a>
+          <p class="white_tekst">Store Kongensgade 36</p>
+          <p class="white_tekst">1264 København</p>
         </div>
       </section>
     </footer>

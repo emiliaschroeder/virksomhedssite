@@ -11,17 +11,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #faf4ed;
-  border-bottom: black solid 1px;
-  margin-bottom: 4rem;
-  font-family: "Anybody", sans-serif;
+  background-color: var(--white);
+  font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 1.3rem;
+
+  /* Så menuen er placeret over lottie teksten */
+  z-index: 2;
 }
 
 .logo img {
-  max-width: 40%;
+  max-width: 60%;
 }
 
 nav {
@@ -47,15 +48,15 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333333;
+  color: var(--blue);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
-.menu a:hover {
+/* .menu a:hover {
   text-shadow: 0 0 20px #6d86c2, 0 0 30px #a5b5dc, 0 0 40px #a5b5dc;
-}
+} */
 
 .burger {
   width: 30px;
@@ -66,13 +67,14 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #333333;
+  background-color: var(--blue);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
 .burger {
   display: none;
 }
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
@@ -97,7 +99,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #faf4ed;
+    background-color: var(--white);
     position: absolute;
     top: 94px;
     left: 0;
@@ -114,6 +116,6 @@ nav {
     font-size: 24px;
   }
   .logo img {
-    max-width: 30%;
+    max-width: 50%;
   }
 }
