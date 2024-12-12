@@ -3,3 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  --blue: #384896;
+  --white: #f4eae0;
+  --orange: #ffd6a3;
+  --red: #8b322f;
+  --brown: #3e2d16;
+}
