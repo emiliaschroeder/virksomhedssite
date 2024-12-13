@@ -8,10 +8,72 @@ a {
   text-decoration: none; /* Fjerner standard link-underlines */
 }
 
+/* main */
+
 body {
   background-color: var(--white);
 }
 
+h1 {
+  padding-top: 2rem;
+  color: var(--blue);
+}
+
+p {
+  color: var(--blue);
+}
+
+.follow {
+  margin-bottom: -1rem;
+}
+
+.timegrid_1-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.dage {
+  margin-left: 3rem;
+}
+
+.tider {
+  margin-right: 3rem;
+}
+
+.contact {
+  padding: 5px;
+}
+
+.contact a {
+  display: inline-block;
+}
+
+.facebook,
+.instagram {
+  color: var(--white);
+  font-family: "McLaren", sans-serif;
+  border: 10px solid var(--blue);
+  background-color: var(--blue);
+  border-radius: 2rem;
+}
+
+.facebook {
+  margin-left: 12.3rem;
+}
+
+.instagram {
+  margin-left: 12rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact .facebook:hover,
+.contact .instagram:hover {
+  text-decoration: underline;
+}
+
+/* footer */
 .grid_1-1 {
   justify-items: center;
 }
@@ -56,6 +118,13 @@ p {
 }
 
 /* underlines og outlines */
+.blue_outline {
+  background-image: url("../billeder/blue_outline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11rem;
+}
+
 .white_line2 {
   background-image: url("/billeder/white_line.svg");
   background-repeat: no-repeat;
