@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none; /* Fjerner standard link-underlines */
+}
+
+body {
+  background-color: var(--white);
+}
+
 .grid_1-1 {
   justify-items: center;
 }
@@ -29,6 +37,7 @@ footer {
   padding-right: 2rem;
   margin: auto;
 }
+
 h1,
 p,
 h2 {
@@ -44,4 +53,12 @@ p {
 
 .white_tekst {
   color: var(--white);
+}
+
+/* underlines og outlines */
+.white_line2 {
+  background-image: url("/billeder/white_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
 }
