@@ -73,6 +73,13 @@ p {
   text-decoration: underline;
 }
 
+/* skillevæg */
+
+.space {
+  margin-left: 9.5rem;
+  margin-bottom: 2rem;
+}
+
 /* form tag */
 .form {
   font-family: "McLaren", sans-serif;
