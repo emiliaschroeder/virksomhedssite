@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid_1-1 {
+  justify-items: center;
+}
+
+.box_blue {
+  background-color: var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+footer {
+  margin-top: 3rem;
+}
+
+/* Billede i menu, events og om os skal være mindre */
+.billede {
+  display: block;
+  margin: auto;
+  align-self: stretch;
+  width: 100%; /* Får billederne til at fylde hver firkant */
+  height: 100%; /* Får billederne til at fylde hver firkant */
+  object-fit: cover; /* Sørger for, at billederne ikke strækkes */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+h1,
+p,
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  line-height: 2.5rem;
+}
+
+.white_tekst {
+  color: var(--white);
+}
