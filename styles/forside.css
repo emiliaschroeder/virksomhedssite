@@ -18,7 +18,7 @@ body {
 .box_blue {
   background-color: var(--blue);
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 footer {
   margin-top: 3rem;
@@ -27,6 +27,47 @@ footer {
 /* Billeder css */
 .forside_img {
   width: 100%;
+}
+
+/* Illustrationer */
+
+.bg_vin {
+  background-image: url("../billeder/vinflaske_blue.svg");
+  background-repeat: no-repeat;
+  background-position: top 250px right;
+  background-size: 25%;
+}
+
+.bg_bestik {
+  background-image: url("../billeder/bestik.svg");
+  background-repeat: no-repeat;
+  background-position: top 400px right 40px;
+  background-size: 15%;
+}
+
+.bg_kaffe {
+  background-image: url("../billeder/kaffeboenner.svg");
+  background-repeat: no-repeat;
+  background-position: top 400px left 40px;
+  background-size: 12%;
+}
+.bg_vinglas {
+  background-image: url("../billeder/vinglas.svg");
+  background-repeat: no-repeat;
+  background-position: top 100px left;
+  background-size: 12%;
+}
+.bg_lys {
+  background-image: url("../billeder/lys_hvid.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right 20px;
+  background-size: 12%;
+}
+.bg_noder {
+  background-image: url("../billeder/noder.svg");
+  background-repeat: no-repeat;
+  background-position: top 290px right 20px;
+  background-size: 20%;
 }
 
 /* Billede i menu, events og om os skal være mindre */
