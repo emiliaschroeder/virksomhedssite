@@ -112,8 +112,8 @@ body {
 .moshe {
   position: relative;
   color: var(--red);
-  font-size: 30px;
-  margin-top: -450px;
+  font-size: 15px;
+  margin-top: -460px;
   padding-left: -180px;
   z-index: 3;
   margin-bottom: 140px;
@@ -148,7 +148,9 @@ body {
 
 /* teksten over pilen i rødt banner */
 .billedertekst{
-  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
   }
 
 
