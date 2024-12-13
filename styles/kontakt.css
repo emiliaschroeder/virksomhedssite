@@ -76,13 +76,19 @@ p {
 /* form tag */
 .form {
   font-family: "McLaren", sans-serif;
-  padding: 0.6rem;
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+  margin-top: 2rem;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
+}
+
+/* styling af formens tekstpunkter */
+label {
+  font-family: "Permanent Marker", cursive;
+  color: var(--blue);
 }
 
 input[type="text"],
