@@ -29,7 +29,7 @@ footer {
   width: 100%;
 }
 /* Størrelsen på billederne i mobil */
-.size_mobil {
+.size {
   max-width: 60%;
 }
 
@@ -42,7 +42,7 @@ footer {
 .bg_vin {
   background-image: url("../billeder/vinflaske_blue.svg");
   background-repeat: no-repeat;
-  background-position: top 250px right -2px;
+  background-position: bottom 250px right -2px;
   background-size: 25%;
 }
 
@@ -198,8 +198,8 @@ h2 {
 }
 
 p {
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
   line-height: 2.5rem;
 }
 
@@ -212,5 +212,96 @@ p {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  /* Billeder */
+  .size {
+    max-width: 80%;
+  }
+
+  .collage {
+    max-width: 70%;
+  }
+
+  /* Tekst */
+  p {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Illustrationer */
+  .bg_vin {
+    background-position: bottom 50px right -2px;
+    background-size: 12%;
+  }
+
+  .bg_bestik {
+    background-position: top 40px center;
+    background-size: 7%;
+  }
+
+  .bg_kaffe {
+    background-position: top 450px left 40px;
+    background-size: 6%;
+  }
+  .bg_vinglas {
+    background-position: top 190px left;
+    background-size: 10%;
+  }
+  .bg_lys {
+    background-position: bottom 20px right 100px;
+    background-size: 10%;
+  }
+  .bg_noder {
+    background-position: top 340px right 50px;
+    background-size: 10%;
+  }
+
+  /* Outline og underline */
+
+  .blue_outline {
+    background-position: center top 30px;
+    background-size: 14rem;
+  }
+
+  .blue_line {
+    background-position: center bottom 25px;
+    background-size: 11rem;
+  }
+
+  .red_outline {
+    background-position: center top 35px;
+    background-size: 13rem;
+  }
+
+  .red_line {
+    background-position: center bottom 28px;
+    background-size: 16rem;
+  }
+
+  .white_outline {
+    background-position: center top 35px;
+    background-size: 14rem;
+  }
+
+  .white_line {
+    background-position: center bottom 28px;
+    background-size: 16rem;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
   }
 }
