@@ -34,7 +34,6 @@ footer {
   display: block;
   margin: auto;
   align-self: stretch;
-  max-width: 100%;
   width: 100%; /* Får billederne til at fylde hver firkant */
   height: 100%; /* Får billederne til at fylde hver firkant */
   object-fit: cover; /* Sørger for, at billederne ikke strækkes */
@@ -51,21 +50,29 @@ footer {
   max-width: 100%;
 }
 
+/* Så teksten under lottie og billede ikke overlapper */
 .wrapper {
   display: block;
   overflow: hidden; /* Prevents text from spilling into the animation container */
 }
 
+/* Baggrundsbilledet på forside(med lottie) */
 .forside_img {
   grid-area: 1 / 1; /* Place image in the same grid cell */
   width: 100%;
   height: auto;
 }
 
+/* Lottie filen */
 .lottie {
   grid-area: 1 / 1; /* Place animation in the same grid cell */
   width: 100%; /* Adjust size as needed */
   z-index: 1; /* Ensure it appears above the image */
+}
+
+/* Størrelsen på billederne i mobil */
+.size_mobil {
+  max-width: 60%;
 }
 
 /* Tekst */
