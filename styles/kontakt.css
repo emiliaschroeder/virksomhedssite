@@ -151,8 +151,15 @@ p {
 .bg_noder {
   background-image: url("../billeder/noder.svg");
   background-repeat: no-repeat;
-  background-position: bottom 10px right 2px;
+  background-position: bottom 1rem right 1rem;
   background-size: 20%;
+}
+
+.bg_omvendt {
+  background-image: url("../billeder/bg_omvendt.png");
+  background-repeat: no-repeat;
+  background-position: bottom 1rem left 0rem;
+  background-size: 15%;
 }
 
 /* underlines og outlines */
