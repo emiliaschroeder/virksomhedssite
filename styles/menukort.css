@@ -25,14 +25,13 @@ footer {
   margin-top: 3rem;
 }
 
-/* Billede i menu, events og om os skal være mindre */
 .billede {
   display: block;
   margin: auto;
   align-self: stretch;
-  width: 100%; /* Får billederne til at fylde hver firkant */
-  height: 100%; /* Får billederne til at fylde hver firkant */
-  object-fit: cover; /* Sørger for, at billederne ikke strækkes */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: auto;
@@ -55,12 +54,37 @@ p {
   color: var(--white);
 }
 
+/* menu */
+
+.mad {
+  position: relative;
+  background-image: url(/billeder/urmenu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  padding: 1rem;
+}
+
+.mad h1,
+.mad p {
+  position: relative;
+  z-index: 2;
+}
+
 /* underlines og outlines */
 .white_line2 {
   background-image: url("/billeder/white_line.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9rem;
+}
+
+.blue_line {
+  background-image: url("../billeder/blue_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
 }
 
 @media (min-width: 800px) {
