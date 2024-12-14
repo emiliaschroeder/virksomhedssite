@@ -171,3 +171,54 @@ body {
 }
 
 
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+
+
+@media (min-width: 800px){
+
+.rød-linje{
+  margin-left: 310px;
+  width: 650px;
+}
+
+
+/* text-section - teksten om os, både øverst og nederst */
+.text-section1, .text-section2 p {
+  font-size: 1rem;
+  color: var(--blue);
+  line-height: 1.9;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 20px;
+  line-height: 35px;
+  font-size: 18px;
+}
+
+
+.background {
+  width: 220px;
+  height: 220px;
+  border-radius: 40px;
+  display: flex;
+  gap: -100px;
+}
+
+
+.billede1, .billede2{
+  position: relative;
+   width: 176px;
+   height: 230px;
+   border-radius: 30px;
+   margin-bottom: 130px;
+   gap: 1;
+ }
+
+
+
+
+
+
+}
