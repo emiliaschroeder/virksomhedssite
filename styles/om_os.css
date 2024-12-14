@@ -170,6 +170,10 @@ body {
   border: 2px solid var(--white);
 }
 
+.billedertekst span {
+margin-left: 20px;
+}
+
 
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -208,16 +212,39 @@ body {
 }
 
 
-.billede1, .billede2{
-  position: relative;
-   width: 176px;
-   height: 230px;
-   border-radius: 30px;
-   margin-bottom: 130px;
-   gap: 1;
- }
+.billede1{
+  z-index: 1;
+  top: -223px;
+  left: -27px;
+  rotate: -6deg;
+  width:170px ;
+ height: auto;
+} 
+
+.billede2 {
+  z-index: 2;
+  top: -223px;
+  left: 27px;
+  rotate: 6deg;
+  height: auto;
+  width: 170px ;
+}
 
 
+ .billedertekst span {
+  margin-left: 50px;
+  }
+  .billedertekst {
+    font-size: 25px;
+    }
+
+
+    .moshe {
+      margin-top: -520px;
+      padding-left: -180px;
+      margin-bottom: 140px;
+      font-size: 16px;
+    }
 
 
 }
