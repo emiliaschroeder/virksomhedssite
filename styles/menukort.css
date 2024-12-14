@@ -62,3 +62,36 @@ p {
   background-position: center;
   background-size: 9rem;
 }
+
+@media (min-width: 800px) {
+  /* grid */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Tekst */
+  p {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Outline og underline */
+
+  .blue_outline {
+    background-position: center top 30px;
+    background-size: 14rem;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+}

@@ -19,6 +19,10 @@ h1 {
   color: var(--blue);
 }
 
+h2 {
+  color: var(--blue);
+}
+
 p {
   color: var(--blue);
 }
@@ -45,32 +49,9 @@ p {
   padding: 5px;
 }
 
-.contact a {
-  display: inline-block;
-}
-
-.facebook,
-.instagram {
-  color: var(--white);
-  font-family: "McLaren", sans-serif;
-  border: 10px solid var(--blue);
-  background-color: var(--blue);
-  border-radius: 2rem;
-}
-
-.facebook {
-  margin-left: 12.3rem;
-}
-
-.instagram {
-  margin-left: 12rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.contact .facebook:hover,
-.contact .instagram:hover {
-  text-decoration: underline;
+.tlf {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* skillevæg */
@@ -167,6 +148,13 @@ p {
 }
 
 /* underlines og outlines */
+.blue_line {
+  background-image: url("../billeder/blue_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
+}
+
 .blue_outline {
   background-image: url("../billeder/blue_outline.svg");
   background-repeat: no-repeat;
@@ -179,4 +167,65 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9rem;
+}
+
+@media (min-width: 800px) {
+  /* grid */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timegrid_1-1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .tider {
+    margin-right: 8rem;
+  }
+
+  .dage {
+    margin-left: 8rem;
+  }
+
+  /* Tekst */
+  p {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  /* form tag */
+
+  .form {
+    max-width: 700px;
+  }
+
+  /* Outline og underline */
+
+  .blue_outline {
+    background-position: center top 16px;
+    background-size: 20rem;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+  .blue_line {
+    background-position: center bottom 25px;
+    background-size: 11rem;
+  }
+
+  .space {
+    margin-left: 40rem;
+    margin-bottom: 2rem;
+  }
 }
