@@ -12,6 +12,69 @@ body {
   background-color: var(--white);
 }
 
+/* menu */
+
+.menugrid_1-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+}
+
+.mad {
+  position: relative;
+  background-image: url(/billeder/urmenu.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  padding: 1rem;
+}
+
+.mad h1,
+.mad p {
+  position: relative;
+  z-index: 1;
+}
+
+.mad h1,
+.drikke h1 {
+  color: var(--blue);
+}
+
+.mad p,
+.drikke p {
+  color: var(--brown);
+}
+
+.drikkegrid_1-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.drikke {
+  margin-top: 10rem;
+}
+
+/* underlines og outlines */
+.white_line2 {
+  background-image: url("/billeder/white_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
+}
+
+.blue_line {
+  background-image: url("../billeder/blue_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
+}
+
+/* footer */
+footer {
+  margin-top: 6rem;
+}
+
 .grid_1-1 {
   justify-items: center;
 }
@@ -20,9 +83,6 @@ body {
   background-color: var(--blue);
   padding-top: 2rem;
   padding-bottom: 4rem;
-}
-footer {
-  margin-top: 3rem;
 }
 
 .billede {
@@ -52,39 +112,6 @@ p {
 
 .white_tekst {
   color: var(--white);
-}
-
-/* menu */
-
-.mad {
-  position: relative;
-  background-image: url(/billeder/urmenu.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
-  padding: 1rem;
-}
-
-.mad h1,
-.mad p {
-  position: relative;
-  z-index: 1;
-}
-
-/* underlines og outlines */
-.white_line2 {
-  background-image: url("/billeder/white_line.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9rem;
-}
-
-.blue_line {
-  background-image: url("../billeder/blue_line.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 8rem;
 }
 
 @media (min-width: 800px) {
