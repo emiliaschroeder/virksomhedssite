@@ -130,6 +130,7 @@ body {
   padding-top: 45px;
   position: relative;
   margin-top: -15px;
+  margin-bottom: 5px;
 }
 
 .rødt_banner p {
@@ -264,5 +265,7 @@ margin-left: 20px;
       border-radius: 20px;
       border: 2px solid var(--blue);
     }
+
+    
 
 }
