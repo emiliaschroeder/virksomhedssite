@@ -21,14 +21,13 @@ body {
 }
 
 .rød-linje{
-  border: none;
-  height: 2px;
-  background-color: var(--red); /* Rød farve */
+  /* border: none; */
+  /* background-color: var(--red); */
   margin-bottom: 60px;
   margin-top: 30px;
   margin-left: 100px;
-  width: 250px;
-}
+  width: 100px; 
+} 
 
 /* text-section - teksten om os, både øverst og nederst */
 .text-section1, .text-section2 p {
@@ -183,10 +182,18 @@ margin-left: 20px;
 
 @media (min-width: 800px){
 
-  
+  .afsnit-image{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
+
 .rød-linje{
-  margin-left: 310px;
-  width: 650px;
+  margin: 0;
+  width: 350px;
+  margin-bottom: 60px;
+  margin-top: 28px;
 }
 
 
@@ -197,7 +204,6 @@ margin-left: 20px;
   line-height: 1.9;
   margin-left: 300px;
   margin-right: 300px;
-  padding-top: 20px;
   line-height: 35px;
   font-size: 18px;
 }
@@ -218,7 +224,7 @@ margin-left: 20px;
   left: -27px;
   rotate: -6deg;
   width:170px ;
- height: auto;
+  height: auto;
 } 
 
 .billede2 {
