@@ -158,6 +158,19 @@ body {
 margin-left: 20px;
 }
 
+.scrollbar {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.scroll-billeder img {
+  width: 200px;
+  height: 280px;
+  margin-right: 0px;
+  border-radius: 20px;
+  border: 2px solid var(--white);
+}
+
 
 
 /* ------------------------------------------------------------------------------------------------------- */
