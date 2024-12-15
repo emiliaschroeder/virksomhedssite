@@ -19,7 +19,7 @@ header {
   text-align: center;
 
   /* Så menuen er placeret over lottie teksten */
-  z-index: 2;
+  z-index: 4;
 }
 
 .logo img {
@@ -66,7 +66,7 @@ nav {
 }
 
 /* .menu a:hover {
-  text-shadow: 0 0 20px #6d86c2, 0 0 30px #a5b5dc, 0 0 40px #a5b5dc;
+  font-size: 22px;
 } */
 
 .burger {

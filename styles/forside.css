@@ -20,9 +20,6 @@ body {
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
-footer {
-  margin-top: 3rem;
-}
 
 /* Billeder css */
 .forside_img {
@@ -62,7 +59,7 @@ footer {
 .bg_vinglas {
   background-image: url("../billeder/vinglas.svg");
   background-repeat: no-repeat;
-  background-position: top 100px left;
+  background-position: top 50px left;
   background-size: 12%;
 }
 .bg_lys {
@@ -74,7 +71,7 @@ footer {
 .bg_noder {
   background-image: url("../billeder/noder.svg");
   background-repeat: no-repeat;
-  background-position: top 290px right 30px;
+  background-position: top 320px right 30px;
   background-size: 20%;
 }
 
