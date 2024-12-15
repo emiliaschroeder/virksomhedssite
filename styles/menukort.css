@@ -18,6 +18,10 @@ body {
   margin-left: 2rem;
 }
 
+.drikke {
+  margin-left: 2rem;
+}
+
 .menugrid_1-1 {
   display: flex;
   justify-content: space-between;
@@ -40,6 +44,10 @@ body {
   text-align: right;
 }
 
+.priser2 {
+  margin-left: 1rem;
+}
+
 .mad h1,
 .mad p,
 .drikke h1,
@@ -53,10 +61,22 @@ body {
   color: var(--blue);
 }
 
-.mad p,
-.drikke p {
+.mad p {
   color: var(--brown);
   text-align: left;
+}
+
+.drikkevarer p {
+  color: var(--brown);
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+.priser2 p {
+  color: var(--brown);
+  text-align: right;
+  margin-left: 4rem;
+  margin-bottom: 1rem;
 }
 
 .mad p {
@@ -66,16 +86,8 @@ body {
 .drikkegrid_1-1 {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   font-size: 14px;
-  padding: 0.6rem;
-  gap: 4rem;
-  margin-left: 4rem;
-}
-
-.drikke h1 {
-  margin-top: 2rem;
-  margin-left: 1.5rem;
-  padding: 1.2rem;
 }
 
 /* underlines og outlines */
@@ -138,25 +150,26 @@ p {
 }
 
 /* illustrationer */
-.bg_kaffe {
-  background-image: url("../billeder/kaffeboenner.svg");
-  background-repeat: no-repeat;
-  background-position: bottom 0rem right 0.5rem;
-  background-size: 12%;
-}
-
-.bg_kop_red {
-  background-image: url("../billeder/bg_kop_red.png");
-  background-repeat: no-repeat;
-  background-position: bottom 2px left 12px;
-  background-size: 18%;
-}
 
 .bg_croissant {
   background-image: url("../billeder/bg_croissant.png");
   background-repeat: no-repeat;
   background-position: top 0.2rem right 0.8rem;
   background-size: 18%;
+}
+
+.bg_kop_red {
+  background-image: url("../billeder/bg_kop_red.png");
+  background-repeat: no-repeat;
+  background-position: left 0.2rem;
+  background-size: 15%;
+}
+
+.bg_kaffe {
+  background-image: url("../billeder/kaffeboenner.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 22%;
 }
 
 @media (min-width: 800px) {
@@ -180,12 +193,58 @@ p {
     font-size: 2.2rem;
   }
 
+  .mad,
+  .drikke {
+    padding: 2rem;
+  }
+
+  .bg_croissant {
+    background-size: 12%;
+  }
+
+  .priser {
+    margin-right: 12rem;
+  }
+
+  .mad p {
+    margin-left: 18rem;
+  }
+
+  .drikkevarer p {
+    margin-left: 18rem;
+  }
+
+  .priser2 p {
+    margin-left: 21rem;
+  }
+
+  .bg_croissant {
+    background-position: top 0.2rem right 14rem;
+    background-size: 10%;
+  }
+
+  .bg_kop_red {
+    background-position: top 3rem left 10rem;
+    background-size: 8%;
+  }
+
+  .bg_kaffe {
+    background-position: bottom right;
+    background-size: 16%;
+  }
+
   /* Outline og underline */
 
   .blue_outline {
     background-position: center top 30px;
     background-size: 14rem;
   }
+
+  .blue_line {
+    background-position: center bottom 25px;
+    background-size: 11rem;
+  }
+
   .white_line2 {
     background-position: center bottom 28px;
     background-size: 12rem;
