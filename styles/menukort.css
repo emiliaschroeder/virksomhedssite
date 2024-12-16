@@ -14,75 +14,46 @@ body {
 
 /* menu */
 
-.menutitel {
-  margin-left: 2rem;
-}
-
-.drikke {
-  margin-left: 2rem;
-}
-
-.menugrid_1-1 {
+.menugrid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* gap: 2rem; */
+  grid-template-columns: 5fr 1fr;
+  max-width: 350px;
+  margin: 0 auto;
   font-size: 14px;
   background-image: url(/billeder/urmenu.png);
-  background-size: 115%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center 2rem;
-  /* padding: 1rem; */
+  background-position: center 0rem;
 }
 
-.priser,
+.menugrid2 {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  max-width: 350px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* .priser,
 .priser2 {
   margin: 0 auto;
   text-align: right;
-}
-
-.priser2 {
-  margin-left: 1rem;
-}
-
-.mad h1,
-.mad p,
-.drikke h1,
-.drikke p {
-  /* position: relative; */
-  z-index: 1;
-}
+} */
 
 .mad h1,
 .drikke h1 {
   color: var(--blue);
 }
 
-.mad p {
-  color: var(--brown);
-  text-align: left;
-}
-
+.mad p,
 .drikkevarer p {
   color: var(--brown);
   text-align: left;
-  margin-left: 2.5rem;
 }
 
 .priser2 p {
   color: var(--brown);
   text-align: right;
-  margin-left: 4rem;
-  margin-bottom: 1rem;
-}
-
-.mad p {
-  margin-left: 3.5rem;
-}
-
-.drikkegrid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 14px;
 }
 
 /* underlines og outlines */
@@ -127,20 +98,9 @@ footer {
   margin: auto;
 }
 
-h1,
-h2 {
+h1 {
   text-align: center;
   padding-bottom: 2rem;
-}
-
-p {
-  margin-right: 2rem;
-  margin-left: 2rem;
-  line-height: 2.5rem;
-}
-
-.white_tekst {
-  color: var(--white);
 }
 
 /* illustrationer */
@@ -159,40 +119,20 @@ p {
   background-size: 15%;
 }
 
-.bg_kaffe {
-  background-image: url("../billeder/kaffeboenner.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 22%;
-}
-
 @media (min-width: 800px) {
-  .menugrid_1-1 {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+  .menugrid {
     font-size: 14px;
-    position: relative;
+    max-width: 350px;
+    margin: 0 auto;
     background-image: url(/billeder/urmenu.png);
-    background-size: 60%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center 2rem;
-    padding: 1rem;
-  }
-
-  /* grid */
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-position: center 0rem;
+    /* padding: 1rem; */
   }
 
   /* Tekst */
-  p {
-    margin-right: 6rem;
-    margin-left: 6rem;
-    line-height: 4rem;
-    font-size: 1.3rem;
-  }
+
   h1 {
     font-size: 3rem;
   }
@@ -200,29 +140,8 @@ p {
     font-size: 2.2rem;
   }
 
-  .mad,
-  .drikke {
-    padding: 2rem;
-  }
-
   .bg_croissant {
     background-size: 12%;
-  }
-
-  .priser {
-    margin-right: 11.2rem;
-  }
-
-  .mad p {
-    margin-left: 18rem;
-  }
-
-  .drikkevarer p {
-    margin-left: 19rem;
-  }
-
-  .priser2 p {
-    margin-left: 17rem;
   }
 
   .bg_croissant {
@@ -233,11 +152,6 @@ p {
   .bg_kop_red {
     background-position: top 3rem left 10rem;
     background-size: 8%;
-  }
-
-  .bg_kaffe {
-    background-position: bottom right;
-    background-size: 16%;
   }
 
   /* Outline og underline */
