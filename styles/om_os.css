@@ -14,6 +14,13 @@ body {
   text-align: center;
 }
 
+.container{
+background-image: url(../billeder/lys_hvid.svg);
+background-repeat: no-repeat;
+background-size:80px;
+background-position: left 200px top;
+}
+
 .afsnit-image {
   width: 175px;
   height: auto;
@@ -39,6 +46,21 @@ body {
   margin-top: -18px;
 }
 
+.text-section1{
+  background-image: url(../billeder/kaffeboenner.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.text-section2{
+  background-image: url(../billeder/baguette.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 70px;
+}
+
+
 /* baggrund Section fra html */
 .baggrund-section {
   display: flex;
@@ -46,6 +68,9 @@ body {
   align-self: center;
   flex-wrap: wrap;
   position: relative;
+  background-image: url(../billeder/vinglas.svg) ;
+  background-repeat:inherit;
+  background-size: 50px;
 }
 
 /* bokse i baggrunden */
@@ -320,4 +345,36 @@ h2 {
     line-height: 4rem;
     font-size: 1.3rem;
   }
+
+/* de små billeder på siden: */
+
+.container{
+  background-image: url(../billeder/lys_hvid.svg);
+  background-repeat: no-repeat;
+  background-size:100px;
+  background-position: left 0px 100px;
+  }
+
+
+.text-section1{
+  background-image: url(../billeder/kaffeboenner.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 70px;
+}
+
+.text-section2{
+  background-image: url(../billeder/baguette.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
+
+
+.baggrund-section {
+  background-image: url(../billeder/vinglas.svg) ;
+  background-repeat:inherit;
+  background-size: 145px;
+}
+
 }
