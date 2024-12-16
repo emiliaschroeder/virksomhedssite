@@ -15,11 +15,11 @@ body {
 }
 
 .container{
-background-image: url(../billeder/lys_hvid.svg);
-background-repeat: no-repeat;
-background-size:80px;
-background-position: left 200px top;
-}
+  background-image: url(../billeder/lys_hvid.svg);
+  background-repeat: no-repeat;
+  background-size:100px;
+  background-position: left 0px 100px;
+  }
 
 .afsnit-image {
   width: 175px;
@@ -348,12 +348,14 @@ h2 {
 
 /* de små billeder på siden: */
 
-.container{
-  background-image: url(../billeder/lys_hvid.svg);
-  background-repeat: no-repeat;
-  background-size:100px;
-  background-position: left 0px 100px;
-  }
+
+
+  .container{
+    background-image: url(../billeder/lys_hvid.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: left 200px top;
+    }
 
 
 .text-section1{
