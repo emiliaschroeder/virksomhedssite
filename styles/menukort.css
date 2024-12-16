@@ -14,6 +14,10 @@ body {
 
 /* menu */
 
+.mad {
+  margin-bottom: 4rem;
+}
+
 .menugrid {
   display: grid;
   grid-template-columns: 5fr 1fr;
@@ -21,24 +25,20 @@ body {
   margin: 0 auto;
   font-size: 14px;
   background-image: url(/billeder/urmenu.png);
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
-  background-position: center 0rem;
+  background-position: -2.8rem 10rem;
+  line-height: 2.8rem;
 }
 
 .menugrid2 {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 3fr 1fr;
   max-width: 350px;
   margin: 0 auto;
   font-size: 14px;
+  line-height: 2.8rem;
 }
-
-/* .priser,
-.priser2 {
-  margin: 0 auto;
-  text-align: right;
-} */
 
 .mad h1,
 .drikke h1 {
@@ -51,9 +51,10 @@ body {
   text-align: left;
 }
 
+.priser,
 .priser2 p {
   color: var(--brown);
-  text-align: right;
+  text-align: center;
 }
 
 /* underlines og outlines */
@@ -99,15 +100,15 @@ body {
 .bg_croissant {
   background-image: url("../billeder/bg_croissant.png");
   background-repeat: no-repeat;
-  background-position: top 0.2rem right 0.8rem;
+  background-position: top 0.2rem right 1rem;
   background-size: 18%;
 }
 
 .bg_kop_red {
   background-image: url("../billeder/bg_kop_red.png");
   background-repeat: no-repeat;
-  background-position: left 0.2rem;
-  background-size: 15%;
+  background-position: top 0rem left 8rem;
+  background-size: 6rem;
 }
 
 /* tekst */
@@ -127,14 +128,23 @@ h2 {
 
 @media (min-width: 800px) {
   .menugrid {
-    font-size: 14px;
-    max-width: 350px;
+    grid-template-columns: 3fr 2fr;
+    justify-items: center;
+    font-size: 16px;
+    max-width: 800px;
     margin: 0 auto;
     background-image: url(/billeder/urmenu.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center 0rem;
-    /* padding: 1rem; */
+  }
+
+  .menugrid2 {
+    grid-template-columns: 3fr 2fr;
+    justify-items: center;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   /* Tekst */
@@ -145,10 +155,11 @@ h2 {
   h2 {
     font-size: 2.2rem;
   }
-
-  .bg_croissant {
-    background-size: 12%;
+  .drikkevarer p {
+    margin-right: 2rem;
   }
+
+  /* illustrationer */
 
   .bg_croissant {
     background-position: top 0.2rem right 14rem;
@@ -156,8 +167,9 @@ h2 {
   }
 
   .bg_kop_red {
-    background-position: top 3rem left 10rem;
-    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: top 0rem left 22rem;
+    background-size: 6rem;
   }
 
   /* Outline og underline */
