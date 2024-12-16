@@ -27,56 +27,33 @@ p {
   color: var(--blue);
 }
 
-.follow {
-  margin-bottom: -1rem;
-}
-
-.timegrid_1-1 {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-}
-
-.dage {
-  margin-left: 3rem;
-}
-
-.tider {
-  margin-right: 3rem;
-}
-
-.contact {
-  padding: 5px;
+.timegrid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 3.8fr 4fr;
+  max-width: 500px;
 }
 
 .tlf {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* skillevæg */
-
-.space {
-  margin-left: 9rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 /* form tag */
 .form {
   font-family: "McLaren", sans-serif;
-  width: 100%;
-  max-width: 400px;
   margin: 0 auto;
-  margin-top: 2rem;
-  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
   background-color: rgb(255, 255, 255);
   border-radius: 6px;
 }
 
 /* styling af formens tekstpunkter */
+
 label {
   font-family: "Permanent Marker", cursive;
   color: var(--blue);
+  margin-left: 0.5rem;
 }
 
 input[type="text"],
@@ -84,8 +61,8 @@ input[type="email"],
 textarea {
   font-family: "McLaren", sans-serif;
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-bottom: 25px;
   border: 1px solid #ddd;
   font-size: 14px;
   box-sizing: border-box;
@@ -152,8 +129,8 @@ p {
 .bg_omvendt {
   background-image: url("../billeder/bg_omvendt.png");
   background-repeat: no-repeat;
-  background-position: bottom 1rem left 0rem;
-  background-size: 15%;
+  background-position: top 5rem left 0rem;
+  background-size: 12%;
 }
 
 /* underlines og outlines */
@@ -185,9 +162,12 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 
-  .timegrid_1-1 {
-    display: flex;
-    justify-content: space-evenly;
+  .timegrid {
+    grid-template-columns: 2fr 4fr;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
   }
 
   .tider {
@@ -196,6 +176,14 @@ p {
 
   .dage {
     margin-left: 8rem;
+  }
+
+  .tlf {
+    margin-top: 3rem;
+  }
+
+  .kontakt {
+    margin-bottom: 4rem;
   }
 
   /* Tekst */
@@ -214,10 +202,6 @@ p {
 
   /* form tag */
 
-  .form {
-    max-width: 700px;
-  }
-
   /* Outline og underline */
 
   .blue_outline {
@@ -233,13 +217,11 @@ p {
     background-size: 11rem;
   }
 
-  .space {
-    margin-left: 39rem;
-    margin-bottom: 2rem;
+  .bg_omvendt {
+    background-size: 10%;
   }
 
   .bg_noder {
-    background-position: top 450px right 50px;
-    background-size: 10%;
+    background-size: 8rem;
   }
 }
