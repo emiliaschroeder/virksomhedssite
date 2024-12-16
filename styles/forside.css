@@ -204,7 +204,7 @@ p {
 }
 
 .grid_1-1 {
-  justify-items: center; /* Center horizontally within each cell */
+  text-align: center;
 }
 
 @media (min-width: 800px) {

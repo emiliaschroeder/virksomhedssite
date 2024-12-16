@@ -38,9 +38,12 @@ footer {
   align-self: stretch;
   width: 70%; /* Får billederne til at fylde hver firkant */
   height: 70%; /* Får billederne til at fylde hver firkant */
-  object-fit: cover; /* Sørger for, at billederne ikke strækkes */
   padding-left: 2rem;
   padding-right: 2rem;
   margin: auto;
   margin-top: 2rem;
+}
+
+.grid_1-1 {
+  text-align: center;
 }
