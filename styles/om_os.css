@@ -32,7 +32,7 @@ body {
 /* text-section - teksten om os, både øverst og nederst */
 .text-section1,
 .text-section2 p {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   color: var(--blue);
   line-height: 1.9;
   margin: 70px;
@@ -213,22 +213,17 @@ h2 {
   margin: auto;
 }
 
+.foot {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  line-height: 2.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 
 @media (min-width: 800px) {
-  /* footer */
-  h2 {
-    font-size: 2.2rem;
-  }
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .white_line2 {
-    background-position: center bottom 28px;
-    background-size: 12rem;
-  }
-
   .afsnit-image {
     margin-top: 5px;
     margin-bottom: 40px;
@@ -305,5 +300,24 @@ h2 {
     margin-right: 0px;
     border-radius: 20px;
     border: 2px solid var(--blue);
+  }
+
+  /* footer */
+  h2 {
+    font-size: 2.2rem;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+  .foot {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
   }
 }
