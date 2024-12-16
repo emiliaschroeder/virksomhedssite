@@ -57,6 +57,13 @@ body {
 }
 
 /* underlines og outlines */
+
+.white_line {
+  background-image: url("../billeder/white_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11rem;
+}
 .white_line2 {
   background-image: url("/billeder/white_line.svg");
   background-repeat: no-repeat;
@@ -72,13 +79,6 @@ body {
 }
 
 /* footer */
-footer {
-  margin-top: 2rem;
-}
-
-.grid_1-1 {
-  justify-items: center;
-}
 
 .box_blue {
   background-color: var(--blue);
@@ -86,19 +86,10 @@ footer {
   padding-bottom: 4rem;
 }
 
-.billede {
-  display: block;
-  margin: auto;
-  align-self: stretch;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin: auto;
-}
-
-h1 {
+.foot {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  line-height: 2.5rem;
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -117,6 +108,21 @@ h1 {
   background-repeat: no-repeat;
   background-position: left 0.2rem;
   background-size: 15%;
+}
+
+/* tekst */
+
+h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+.white_tekst {
+  color: var(--white);
 }
 
 @media (min-width: 800px) {
@@ -169,5 +175,24 @@ h1 {
   .white_line2 {
     background-position: center bottom 28px;
     background-size: 12rem;
+  }
+
+  /* footer */
+  h2 {
+    font-size: 2.2rem;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+  .foot {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
   }
 }

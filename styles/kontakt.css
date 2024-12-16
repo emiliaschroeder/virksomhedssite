@@ -104,17 +104,11 @@ button {
 }
 
 /* footer */
-.grid_1-1 {
-  justify-items: center;
-}
 
 .box_blue {
   background-color: var(--blue);
   padding-top: 2rem;
   padding-bottom: 4rem;
-}
-footer {
-  margin-top: 3rem;
 }
 
 /* Billede i menu, events og om os skal være mindre */
