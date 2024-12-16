@@ -23,16 +23,15 @@ body {
 }
 
 .menugrid_1-1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* gap: 2rem; */
   font-size: 14px;
-  position: relative;
   background-image: url(/billeder/urmenu.png);
   background-size: 115%;
   background-repeat: no-repeat;
   background-position: center 2rem;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .priser,
@@ -49,7 +48,7 @@ body {
 .mad p,
 .drikke h1,
 .drikke p {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 
@@ -81,9 +80,8 @@ body {
 }
 
 .drikkegrid_1-1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   font-size: 14px;
 }
 
@@ -130,7 +128,6 @@ footer {
 }
 
 h1,
-p,
 h2 {
   text-align: center;
   padding-bottom: 2rem;
