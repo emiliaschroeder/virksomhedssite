@@ -26,6 +26,7 @@ main {
   text-align: center;
 }
 
+
 .square {
   display: grid;
   grid-template-columns: 1fr;
@@ -151,6 +152,9 @@ h2 {
     position: relative;
     z-index: 1;
     justify-content: center;
+    background-image: url(../billeder/bg_bestik_blue.png);
+    background-repeat: initial;
+    background-size: 120px;
   }
 
   .square{
@@ -163,6 +167,7 @@ h2 {
       z-index: -1;
       top: -40px;
       margin: 0 auto;
+      border-radius: 50px;
   }
 
   /* footer */
