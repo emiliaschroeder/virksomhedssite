@@ -39,7 +39,7 @@ main {
 }
 
 img {
-  max-width: 100%;
+  width: 90px;
   height: auto;
 }
 .box_blue {
@@ -67,6 +67,8 @@ a {
 h1 {
   text-align: center;
   padding-bottom: 2rem;
+
+  color: var(--blue);
 }
 
 h2 {
