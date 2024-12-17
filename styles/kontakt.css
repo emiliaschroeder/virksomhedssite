@@ -186,6 +186,11 @@ p {
     margin-bottom: 4rem;
   }
 
+  .form {
+    margin-right: 12rem;
+    margin-left: 12rem;
+  }
+
   /* Tekst */
   p {
     margin-right: 6rem;
