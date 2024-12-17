@@ -47,7 +47,7 @@ img {
   max-height: 80vh; /* Adjust this value as needed */
   overflow-y: hidden;
   overflow-x: hidden;
-  max-width: 60vw;
+  max-width: 52vw;
 }
 .scrollable-content:hover {
   scrollbar-color: rgb(56, 72, 150) rgb(255, 214, 163);

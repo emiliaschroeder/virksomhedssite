@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <<<<<<< HEAD
+
     <link rel="stylesheet" href="styles/galleri.css" />
-    =======
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anybody:ital,wght@0,100..900;1,100..900&family=Baskervville:ital@0;1&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Gayathri:wght@100;400;700&family=IM+Fell+Double+Pica:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Permanent+Marker&family=Sintony:wght@400;700&display=swap" rel="stylesheet" />
@@ -15,11 +15,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Anybody:ital,wght@0,100..900;1,100..900&family=Baskervville:ital@0;1&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Gayathri:wght@100;400;700&family=IM+Fell+Double+Pica:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=McLaren&family=Permanent+Marker&family=Sintony:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles/galleri.css" />
     <link rel="stylesheet" href="styles/mutual_styles.css" />
+    <link rel="stylesheet" href="styles/burgermenu.css" />
     <title>Galleri</title>
-    >>>>>>> dea679b132f9ad7c6078703944d1158f05e07674
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="logo">
+        <a href="index.html"> <img src="billeder/logo_blue.svg" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="menukort.html">Menuen</a></li>
+          <li><a href="galleri.html">Galleri</a></li>
+          <li><a href="om_os.html">Om os</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <div class="titel"><h1>Galleri</h1></div>
@@ -29,7 +46,7 @@
         <div class="scrollable-content">
           <div class="gallery1">
             <div class="card card-tall" id="image1"><img src="billeder/IMG_7901-2.jpg" alt="malleri1" /></div>
-            <div class="card card-tall" id="image2"><img src="billeder/IMG_7901kopi1.jpg" alt="quote" /></div>
+            <div class="card card-tall" id="image2"><img src="billeder/IMG_7901kopi1.jpg" alt="malleri22" /></div>
             <div class="card card-tall" id="image3"><img src="billeder/IMG_7905.jpg" alt="malleri2" /></div>
             <div class="card card-tall" id="image4"><img src="billeder/IMG_7961.jpg" alt="maller3" /></div>
             <div class="card card-tall" id="image5"><img src="billeder/IMG_7962.jpg" alt="malleri4" /></div>
@@ -41,11 +58,26 @@
             <div class="card card-tall" id="image11"><img src="billeder/IMG_7968.jpg" alt="malleri4" /></div>
             <div class="card card-tall" id="image12"><img src="billeder/IMG_7969.jpg" alt="malleri4" /></div>
             <div class="card card-tall" id="image13"><img src="billeder/IMG_7970.jpg" alt="malleri4" /></div>
+            <div class="card card-tall" id="image13"><img src="billeder/IMG_7900.jpg" alt="malleri4" /></div>
+            <div class="card card-tall" id="image13"><img src="billeder/IMG_7900-2.jpg" alt="malleri4" /></div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>Lavet Af Hafsa K.Masri</footer>
+    <footer>
+      <footer class="box_blue">
+        <section class="grid_1-1">
+          <div>
+            <img class="billede_f" src="billeder/logo_hvid.svg" alt="hvid logo" />
+          </div>
+          <div>
+            <a href="kontakt.html"><h2 class="white_tekst white_line2">Find os her</h2></a>
+            <p class="white_tekst">Store Kongensgade 36, 1264 København</p>
+          </div>
+        </section>
+      </footer>
+      <script src="javascript/menu.js"></script>
+    </footer>
   </body>
 </html>
