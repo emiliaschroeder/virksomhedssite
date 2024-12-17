@@ -80,6 +80,11 @@ body {
 }
 
 /* footer */
+.box_blue {
+  background-color: var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
 
 /* illustrationer */
 
