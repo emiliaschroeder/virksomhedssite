@@ -42,6 +42,40 @@ img {
   max-width: 100%;
   height: auto;
 }
+.box_blue {
+  background-color: var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.foot {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  line-height: 2.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.white_line2 {
+  background-position: center bottom 28px;
+  background-size: 12rem;
+  background-image: url("/billeder/white_line.svg");
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+.white_tekst {
+  color: var(--white);
+}
 
 .scrollable-content {
   max-height: 80vh; /* Adjust this value as needed */
@@ -101,6 +135,25 @@ img {
     margin-top: 10rem;
     position: relative;
     z-index: 1;
+  }
+
+  /* footer */
+  h2 {
+    font-size: 2.2rem;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+  .foot {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
   }
 }
 

@@ -81,20 +81,6 @@ body {
 
 /* footer */
 
-.box_blue {
-  background-color: var(--blue);
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-.foot {
-  margin-right: 4rem;
-  margin-left: 4rem;
-  line-height: 2.5rem;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
 /* illustrationer */
 
 .bg_croissant {
