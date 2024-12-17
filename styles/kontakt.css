@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none; /* Fjerner standard link-underlines */
+}
+
+/* main */
+
+body {
+  background-color: var(--white);
+}
+
+h1 {
+  padding-top: 2rem;
+  color: var(--blue);
+}
+
+h2 {
+  color: var(--blue);
+}
+
+p {
+  color: var(--blue);
+}
+
+.timegrid {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 3.8fr 4fr;
+  max-width: 500px;
+}
+
+.tlf {
+  margin-top: 1rem;
+}
+
+/* form tag */
+.form {
+  font-family: "McLaren", sans-serif;
+  margin: 0 auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+}
+
+/* styling af formens tekstpunkter */
+
+label {
+  font-family: "Permanent Marker", cursive;
+  color: var(--blue);
+  margin-left: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: "McLaren", sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: var(--blue);
+  color: white;
+  font-family: "McLaren", sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* footer */
+
+.box_blue {
+  background-color: var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Billede i menu, events og om os skal være mindre */
+.billede {
+  display: block;
+  margin: auto;
+  align-self: stretch;
+  width: 100%; /* Får billederne til at fylde hver firkant */
+  height: 100%; /* Får billederne til at fylde hver firkant */
+  object-fit: cover; /* Sørger for, at billederne ikke strækkes */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+
+h1,
+p,
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  line-height: 2.5rem;
+}
+
+.white_tekst {
+  color: var(--white);
+}
+
+/* illustrationer */
+.bg_noder {
+  background-image: url("../billeder/noder.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 1rem right 1rem;
+  background-size: 20%;
+}
+
+.bg_omvendt {
+  background-image: url("../billeder/bg_omvendt.png");
+  background-repeat: no-repeat;
+  background-position: top 5rem left 0rem;
+  background-size: 12%;
+}
+
+/* underlines og outlines */
+.blue_line {
+  background-image: url("../billeder/blue_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
+}
+
+.blue_outline {
+  background-image: url("../billeder/blue_outline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11rem;
+}
+
+.white_line2 {
+  background-image: url("/billeder/white_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
+}
+
+@media (min-width: 800px) {
+  /* grid */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .timegrid {
+    grid-template-columns: 2fr 4fr;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .tider {
+    margin-right: 8rem;
+  }
+
+  .dage {
+    margin-left: 8rem;
+  }
+
+  .tlf {
+    margin-top: 3rem;
+  }
+
+  .kontakt {
+    margin-bottom: 4rem;
+  }
+
+  /* Tekst */
+  p {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  /* form tag */
+
+  /* Outline og underline */
+
+  .blue_outline {
+    background-position: center top 16px;
+    background-size: 20rem;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+  .blue_line {
+    background-position: center bottom 25px;
+    background-size: 11rem;
+  }
+
+  .bg_omvendt {
+    background-size: 10%;
+  }
+
+  .bg_noder {
+    background-size: 8rem;
+  }
+}

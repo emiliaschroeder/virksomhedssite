@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* baggrundsfarve */
+body {
+  background-color: var(--white);
+}
+
+.box_orange {
+  background-color: var(--orange);
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+.box_blue {
+  background-color: var(--blue);
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* Billeder css */
+.forside_img {
+  width: 100%;
+}
+/* Størrelsen på billederne i mobil */
+.size {
+  max-width: 60%;
+}
+
+.collage {
+  padding-bottom: 2rem;
+}
+
+/* Illustrationer */
+
+.bg_vin {
+  background-image: url("../billeder/vinflaske_blue.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 250px right -2px;
+  background-size: 25%;
+}
+
+.bg_bestik {
+  background-image: url("../billeder/bestik.svg");
+  background-repeat: no-repeat;
+  background-position: top 400px right 40px;
+  background-size: 15%;
+}
+
+.bg_kaffe {
+  background-image: url("../billeder/kaffeboenner.svg");
+  background-repeat: no-repeat;
+  background-position: top 400px left 40px;
+  background-size: 12%;
+}
+.bg_vinglas {
+  background-image: url("../billeder/vinglas.svg");
+  background-repeat: no-repeat;
+  background-position: top 50px left;
+  background-size: 12%;
+}
+.bg_lys {
+  background-image: url("../billeder/lys_hvid.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right 20px;
+  background-size: 12%;
+}
+.bg_noder {
+  background-image: url("../billeder/noder.svg");
+  background-repeat: no-repeat;
+  background-position: top 320px right 30px;
+  background-size: 20%;
+}
+
+/* Underline og outline */
+
+.blue_outline {
+  background-image: url("../billeder/blue_outline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
+}
+
+.blue_line {
+  background-image: url("../billeder/blue_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
+}
+
+.red_outline {
+  background-image: url("../billeder/red_outline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
+}
+
+.red_line {
+  background-image: url("../billeder/red_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10rem;
+}
+
+.white_outline {
+  background-image: url("../billeder/white_outline.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8rem;
+}
+
+.white_line {
+  background-image: url("../billeder/white_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11rem;
+}
+.white_line2 {
+  background-image: url("../billeder/white_line.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9rem;
+}
+
+/* Billede i menu, events og om os skal være mindre */
+.billede {
+  display: block;
+  margin: auto;
+  align-self: stretch;
+  width: 100%; /* Får billederne til at fylde hver firkant */
+  height: 100%; /* Får billederne til at fylde hver firkant */
+  object-fit: cover; /* Sørger for, at billederne ikke strækkes */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+}
+
+/* footer billede */
+
+/* Lottie css */
+/* Hvorfor overlapper teksten under? */
+.container {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+
+/* Så teksten under lottie og billede ikke overlapper */
+.wrapper {
+  display: block;
+  overflow: hidden; /* Prevents text from spilling into the animation container */
+  margin-top: -55px;
+}
+
+/* Baggrundsbilledet på forside(med lottie) */
+.forside_img {
+  grid-area: 1 / 1; /* Place image in the same grid cell */
+  width: 100%;
+  height: auto;
+}
+
+/* Lottie filen */
+.lottie {
+  grid-area: 1 / 1; /* Place animation in the same grid cell */
+  width: 100%; /* Adjust size as needed */
+  z-index: 1; /* Ensure it appears above the image */
+}
+
+/* Tekst */
+h1,
+p,
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding-top: 2rem;
+  color: var(--blue);
+}
+
+h2 {
+  color: var(--blue);
+}
+
+.white_tekst {
+  color: var(--white);
+}
+.red_tekst {
+  color: var(--red);
+}
+
+p {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  line-height: 2.5rem;
+}
+
+.grid_1-1 {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  /* grid */
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .order {
+    order: -1;
+  }
+
+  /* Billeder */
+  .size {
+    max-width: 80%;
+  }
+
+  .collage {
+    max-width: 70%;
+  }
+
+  /* Tekst */
+  p {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  /* Illustrationer */
+  .bg_vin {
+    background-position: bottom 50px right -2px;
+    background-size: 12%;
+  }
+
+  .bg_bestik {
+    background-position: top 40px center;
+    background-size: 7%;
+  }
+
+  .bg_kaffe {
+    background-position: top 450px left 40px;
+    background-size: 6%;
+  }
+  .bg_vinglas {
+    background-position: top 190px left;
+    background-size: 10%;
+  }
+  .bg_lys {
+    background-position: bottom 20px right 100px;
+    background-size: 10%;
+  }
+  .bg_noder {
+    background-position: top 340px right 50px;
+    background-size: 10%;
+  }
+
+  /* Outline og underline */
+
+  .blue_outline {
+    background-position: center top 30px;
+    background-size: 14rem;
+  }
+
+  .blue_line {
+    background-position: center bottom 25px;
+    background-size: 11rem;
+  }
+
+  .red_outline {
+    background-position: center top 35px;
+    background-size: 13rem;
+  }
+
+  .red_line {
+    background-position: center bottom 28px;
+    background-size: 16rem;
+  }
+
+  .white_outline {
+    background-position: center top 35px;
+    background-size: 14rem;
+  }
+
+  .white_line {
+    background-position: center bottom 28px;
+    background-size: 16rem;
+  }
+  .white_line2 {
+    background-position: center bottom 28px;
+    background-size: 12rem;
+  }
+}

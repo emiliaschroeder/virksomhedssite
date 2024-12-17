@@ -3,3 +3,47 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  --blue: #384896;
+  --white: #f4eae0;
+  --orange: #ffd6a3;
+  --red: #8b322f;
+  --brown: #3e2d16;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "McLaren", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  margin-top: 3rem;
+}
+.billede_f {
+  margin: auto;
+  align-self: stretch;
+  width: 70%; /* Får billederne til at fylde hver firkant */
+  height: 70%; /* Får billederne til at fylde hver firkant */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.grid_1-1 {
+  text-align: center;
+}
