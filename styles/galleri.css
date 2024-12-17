@@ -38,7 +38,7 @@ main {
   top: -40px;
 }
 
-img {
+.parent img {
   width: 60px;
   height: auto;
 }
