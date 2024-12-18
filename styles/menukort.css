@@ -24,7 +24,7 @@ body {
   max-width: 350px;
   margin: 0 auto;
   font-size: 14px;
-  background-image: url(/billeder/urmenu.png);
+  background-image: url(../billeder/urmenu.png);
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: -2.8rem 10rem;
