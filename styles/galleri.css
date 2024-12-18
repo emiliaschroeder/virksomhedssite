@@ -153,6 +153,7 @@ h2 {
     justify-content: center;
     background-image: url(../billeder/edited-bestik-blue.png);
     background-size: 120px;
+    margin-bottom: -80px;
   }
 
   .square {
@@ -222,7 +223,7 @@ h2 {
     grid-column: span 2 / auto;
   }
 
-.square{
-  right: 17px;
-}
+  .square {
+    right: 17px;
+  }
 }
