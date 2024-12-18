@@ -196,10 +196,10 @@ h2 {
     grid-template-rows: auto 1fr; */
     /* padding: 2em 0; */
     margin-top: -3rem;
-    background-image: url(../billeder/bg_bestik_blue.png);
+    background-image: url(../billeder/edited-bestik-blue.png);
     background-repeat: initial;
     background-size: 70px;
-    margin-bottom: -30px;
+    margin-bottom: -50px;
   }
   .parent {
     grid-row: 1/-1;
