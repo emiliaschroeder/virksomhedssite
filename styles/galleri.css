@@ -64,7 +64,7 @@ main {
 .white_line2 {
   background-position: center bottom 28px;
   background-size: 12rem;
-  background-image: url("/billeder/white_line.svg");
+  background-image: url("../billeder/white_line.svg");
   background-repeat: no-repeat;
 }
 a {
