@@ -26,7 +26,6 @@ main {
   text-align: center;
 }
 
-
 .square {
   display: grid;
   grid-template-columns: 1fr;
@@ -141,9 +140,8 @@ h2 {
     margin-right: 100px;
   }
 
-  .scrollable-content{
+  .scrollable-content {
     margin-top: 150px;
-
   }
   .parent {
     display: grid;
@@ -152,22 +150,21 @@ h2 {
     position: relative;
     z-index: 1;
     justify-content: center;
-    background-image: url(../billeder/bg_bestik_blue.png);
-    background-repeat: initial;
+    background-image: url(../billeder/edited-bestik-blue.png);
     background-size: 120px;
   }
 
-  .square{
-      display: grid;
-      grid-template-columns: 1fr;
-      position: relative;
-      height: 90vh;
-      width: 700px;
-      place-self: center;
-      z-index: -1;
-      top: -40px;
-      margin: 0 auto;
-      border-radius: 50px;
+  .square {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    height: 90vh;
+    width: 700px;
+    place-self: center;
+    z-index: -1;
+    top: -40px;
+    margin: 0 auto;
+    border-radius: 50px;
   }
 
   /* footer */
@@ -191,8 +188,6 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  
-
   main {
     display: grid;
     grid-template-columns: 1fr;
